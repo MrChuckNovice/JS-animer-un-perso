@@ -2,7 +2,10 @@ var kunio = document.getElementById('kunio')
  var change = setInterval(balanceScale, 500);
  var image1 = 'url("img/kunio1")';
  var image2 = 'url("img/kunio2")';
-function balanceScale(){
+
+ var count = 0
+ 
+/*function balanceScale(){
   if (kunio == true) {
       kunio.innerHTML = image1;
   }else if (image1 == true) {
@@ -17,8 +20,8 @@ balanceScale();
 
  function stopFunction(){
      clearInterval(myVar);
- }
-/* count = ++count;
+ }*/
+ count = ++count;
    switch(count){
      case(count=1):
        kunio.style.backgroundImage= 'url("img/kunio2.png")';
@@ -52,4 +55,3 @@ balanceScale();
        kunio.style.backgroundImage= 'url("img/kunio1.png")';
       break; 
  }
-}*/
