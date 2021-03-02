@@ -6,8 +6,8 @@ convert.addEventListener("click", function(){
      outputCrypted.value="";
            for (var i= 0; i < inputCode.length; i++) {
         outputCrypted.value += inputCode[i].charCodeAt(0).toString(2) + " ";
-        console.log(outputCrypted.value)
-        outputCrypted.value;
+        console.log(outputCrypted.value);
+       
 }
 });
   
