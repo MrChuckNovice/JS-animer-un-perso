@@ -155,7 +155,7 @@ isEven = (number) => {
 }
 
 let test = isEven(5);
-//console.log(test);*/
+//console.log(test);
 
 let jean = {
     nom: "Jean",
@@ -169,3 +169,23 @@ let jean = {
 
 jean.bonjour();
 
+const h1 = document.querySelectorAll(".test");
+
+h1.forEach(element => {
+   console.log(element)
+   element.addEventListener("click", function () {
+       element.classList.toggle("red")
+       console.log(h1.classList)
+   });
+});*/
+
+/*const bidule = document.getElementById("bidule");
+console.log(bidule)*/
+
+//pour bloquer le chargement d'une page//
+let noLoad = document.querySelector("form")
+
+noLoad.addEventListener("submit", function(event){
+    event.preventDefault()
+    console.log()
+});

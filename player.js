@@ -45,6 +45,5 @@ document.addEventListener('keydown', function (event) {
         player.style.backgroundImage = "url('img/link-walkingleft.png')";
         if (player.offsetLeft > 0) {
         player.style.left = (player.offsetLeft - moveSize) + "px";
-        ccdvf
     }
 }});
