@@ -226,6 +226,39 @@ checkform.addEventListener("submit", function(e)
 */
 //C'est juste pour montrer textContent (ou innerText), rien de bien foufou dans ce code
 
+/*const title = document.getElementById("title");
+title.textContent = "Mon super formulaire";
+
+/**
+ * Empêchez la soumission du formulaire par défaut lorsque l'on clique sur Valider
+ * Comparez les 2 champs de mot de passe
+ * -> s'ils sont différents, affichez un message d'erreur "Vos mots de passe sont différents" en rouge dans la div d'id feedback
+ * -> s'ils sont identiques, affichez un message "C'est ok" en vert dans la div d'id feedback
+ * BONUS : "vider" le formulaire si c'est ok
+ */
+
+//Une correction possible
+
+/*const form = document.querySelector("form");
+const password = document.getElementById("password");
+const confirmPassword = document.getElementById("confirmPassword");
+const feedbackDiv = document.getElementById("feedback");
+
+form.addEventListener("submit", (e) => { //syntaxe de fonction fléchée
+    //empêche l'action par défaut de l'événement (ici empêche la soumission du formulaire : refresh complet de la page, modification de l'URL si méthode GET, formulaire remis à 0, ...)
+  e.preventDefault();
+  //Si les valeurs dans nos inputs sont identiques
+  // /!\ ne pas oublier .value, sinon on comparerait deux éléments HTML
+  if (password.value === confirmPassword.value) {
+    feedbackDiv.innerHTML = `<p style="color: green;">C'est ok</p>`;
+    //remets le formulaire à 0
+    form.reset();
+  } else { //sinon
+    feedbackDiv.innerHTML = `<p style="color: red;">Vos mots de passe sont différents</p>`;
+  }
+});*/
+//C'est juste pour montrer textContent (ou innerText), rien de bien foufou dans ce code
+
 const title = document.getElementById("title");
 title.textContent = "Mon super formulaire";
 
